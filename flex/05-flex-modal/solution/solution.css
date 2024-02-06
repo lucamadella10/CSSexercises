@@ -33,6 +33,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  border: solid red 5px;
 }
 
 .close-button {
@@ -60,12 +61,14 @@ button.continue {
   background: royalblue;
   border: 1px solid royalblue;
   color: white;
+  border: solid red 5px;
 }
 
 button.cancel {
   background: white;
   border: 1px solid #ddd;
   color: royalblue;
+  border: solid red 5px;
 }
 
 /* SOLUTION: */
@@ -74,11 +77,13 @@ button.cancel {
   display: flex;
   gap: 16px;
   padding: 16px;
+  border: solid red 5px;
 }
 
 .icon {
   /* this keeps the icon from getting smashed by the text */
   flex-shrink: 0;
+  border: solid red 5px;
 }
 /* header container should be wrapped around the button element as well in order for flex style to work */
 .header {
@@ -88,8 +93,10 @@ button.cancel {
   font-size: 18px;
   font-weight: 700;
   margin-bottom: 8px;
+  border: solid red 5px;
 }
 
 .text {
   margin-bottom: 16px;
+  border: solid red 5px;
 }

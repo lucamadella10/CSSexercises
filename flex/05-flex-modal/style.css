@@ -1,3 +1,10 @@
+*,
+*::before,
+*::after {
+margin: 0;
+padding: 0;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 html, body {
@@ -20,6 +27,9 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
 }
 
 .icon {
@@ -27,12 +37,13 @@ body {
   font-size: 26px;
   font-weight: 700;
   background: lavender;
-  width: 42px;
-  height: 42px;
+  min-width: 42px;
+  min-height: 42px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: .5rem;
 }
 
 .close-button {
@@ -41,8 +52,8 @@ body {
   color: #888;
   font-weight: 400;
   font-size: 16px;
-  height: 24px;
-  width: 24px;
+  max-height: 24px;
+  max-width: 24px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -60,10 +71,30 @@ button.continue {
   background: royalblue;
   border: 1px solid royalblue;
   color: white;
+  flex: 0 1 auto;
 }
 
 button.cancel {
   background: white;
   border: 1px solid #ddd;
   color: royalblue;
+  flex: 0 1 auto;
+}
+
+.flex {
+  display: flex;
+  align-items: space-around;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1rem;
+}
+
+.flex > *{
+  flex: 1 1 85%;
+}
+
+.header{
+  font-weight: bold;
+  font-size: large;
 }
